@@ -21,7 +21,7 @@ public class BicicletaElectrica extends Bicicleta{
 
         boolean pudo = false;
 
-        if(b.getPotenciaWatts() <= MAX_POTENCIA_X_BICICLETA){
+        if(b.getPotenciaWatts() <= MAX_POTENCIA_X_BICICLETA && super.getKm() < MAX_KM_X_BICICLETA){
             pudo = true;
         }
         return pudo;
